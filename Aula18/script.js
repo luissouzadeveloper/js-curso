@@ -1,10 +1,36 @@
-var cont, num = [];
+var cont;
 
-
-for(cont = 0; cont < 5; cont++){ // <- O cont começa em 0 e enquanto ele for menor que 100, ele executará a tarefa até o 99.
-    num.push(prompt('Informe números: '));
+for(cont = 0; cont < 10; cont++){
+    document.write('CSS3 <br><br>');
 }
 
-for(cont = 0; cont < 5; cont++){ // <- O cont começa em 0 e enquanto ele for menor que 100, ele executará a tarefa até o 99.
-    document.write(num[cont] + ' <br>');
+// Trabalhando o for com arrays
+
+var num = [], contador;
+
+for(contador = 0; contador < 5; contador++){
+    num.push(prompt('Digite valores: '));
 }
+
+for(contador = 0; contador < 5; contador++){
+    document.write(num[contador] + '<br><br>');
+}
+
+// Trabalhando o for com matrizes
+
+var mochila = [
+    ['corda', 1],
+    ['Cura', 10],
+    ['Lanterna', 1],
+    ['Pilhas', 20]
+];
+
+for(var linha = 0; linha < 4; linha++){
+    for(var coluna = 0; coluna < 2; coluna++){
+        document.write(mochila[linha][coluna] + ' ');
+    }
+    document.write('<br>');
+}
+
+console.table(mochila)
+
