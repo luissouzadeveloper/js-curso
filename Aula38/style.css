@@ -1,0 +1,12 @@
+#rel{
+    text-align: center;
+    color: #0f0;
+    font-weight: bold;
+    font-size: 40px;
+    width: 160px;
+    background-color: #000;
+    padding: 20px;
+    border: 15px solid gray;
+    display: flex;
+    justify-content: center;
+}
